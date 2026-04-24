@@ -356,7 +356,7 @@
         <header>
             <div class="logo">
                 <div class="logo-icon">🧬</div>
-                <h1>ICOR Codon Optimizer</h1>
+                <h1>MACACHOR Codon Optimizer</h1>
             </div>
             <p class="subtitle">RNN-based codon optimization for <em>E. coli</em> expression</p>
             <a href="https://doi.org/10.1186/s12859-023-05246-8" target="_blank" class="paper-link">📄 Publication: BMC Bioinformatics (2023)</a>
@@ -759,7 +759,7 @@
         }
 
         function downloadOutput() {
-            const header = '>ICOR_optimized_sequence';
+            const header = '>MACACHOR_optimized_sequence';
             const content = header + '\n' + currentOutput.match(/.{1,60}/g).join('\n');
             const blob = new Blob([content], {type: 'text/plain'});
             const url = URL.createObjectURL(blob);
